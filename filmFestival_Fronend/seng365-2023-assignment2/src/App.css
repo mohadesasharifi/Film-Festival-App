@@ -1,0 +1,189 @@
+body {
+  background-color: #565c67;
+}
+.card-container {
+  background-color: #565c67;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  padding: 0 150px;
+}
+
+.filterContainer {
+  background-color: #565c67;
+  padding:50px 150px;
+}
+.directorBadge {
+  display: flex;
+  align-items: center;
+}
+
+.directorBadge img {
+  width: 40px; 
+  height: 40px; 
+  object-fit: cover;
+}
+
+.directorBadge span {
+  display: flex;
+  align-items: center;
+  font-size: 14px; /* Adjust the font size to your desired size */
+  font-weight: bold; /* Adjust the font weight to your desired weight */
+} 
+.profile-image {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+/* app.css */
+
+/* Styles for the film page container */
+.filmPage {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  
+  background-color: #565c67;
+  padding: 30px;
+
+}
+
+
+/* Styles for the film card */
+.filmCard {
+  background-color: #565c67;
+  color: #565c67;
+  padding: 0 20px;
+  margin: 0 53px;
+}
+.card-link {
+  color: black; /* Set the desired text color */
+  text-decoration: none; /* Remove underline */
+}
+
+.card-link:hover {
+  color: black; /* Set the desired text color on hover */
+}
+
+.similarFilms {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .pagination {
+    justify-content: flex-start;
+  }
+}
+/* Media queries for smaller devices */
+@media (max-width: 1200px) {
+  .filterContainer {
+    padding: 0 100px;
+  }
+}
+
+@media (max-width: 992px) {
+  .filterContainer {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .filterContainer {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .filterContainer {
+    padding: 0 15px;
+  }
+}
+/* Media queries for smaller devices */
+@media (max-width: 1200px) {
+  .similarFilms{
+    grid-template-columns: repeat(5, 1fr);
+    padding: 0 100px;
+  }
+}
+
+@media (max-width: 992px) {
+  .similarFilms{
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .similarFilms {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .similarFilms {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 15px;
+  }
+}
+/* Media queries for smaller devices */
+@media (max-width: 1200px) {
+  .card-container {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 100px;
+  }
+}
+
+@media (max-width: 992px) {
+  .card-container {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 15px;
+  }
+}
+
+
+.navBarButton {
+  /* Add your desired styles here */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* padding: 10px 10 10 10 */
+}
+.navBarButton button {
+  /* Add your desired button styles here */
+  margin-left: 10px; /* Optional: Add spacing between the button and other content */
+}
+
+.navBarfilmsLink {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.custom-bg-light {
+  background-color: rgb(243, 231, 231);
+}
